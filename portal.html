@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+    Atividade da Agenda 13 - CSS (Cascading Style Sheets)
+    Portal temático "Meu Portal de Entretenimento Digital", com três seções lado a lado.
+-->
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meu Portal de Entretenimento Digital</title>
+
+    <!-- 1º: CSS Reset (Eric Meyer) — zera o estilo padrão do navegador antes de qualquer estilização -->
+    <link rel="stylesheet" type="text/css" href="reset.css">
+
+    <!-- 2º: folha de estilo externa com o layout e as seções -->
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+
+    <!-- 3º: CSS interno — define a cor dos títulos e das fontes via classes e IDs -->
+    <style>
+        /* Classe usada por todos os títulos de seção */
+        .titulo-secao {
+            color: #ffd166;
+            text-align: center;
+            /* O reset zera o tamanho dos títulos, então o tamanho é definido aqui */
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        /* ID: identifica a seção de Games, para que ela tenha um destaque próprio */
+        #games h2 {
+            color: #06d6a0;
+        }
+
+        /* Classe usada pelas fontes (legendas) das imagens */
+        .legenda-imagem {
+            font-size: 0.9em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="titulo-principal">Meu Portal de Entretenimento Digital</h1>
+    </header>
+
+    <!-- Div principal: envolve as três seções que ficarão lado a lado (flexbox) -->
+    <div class="principal">
+
+        <!-- Seção 1: Filmes e Séries -->
+        <section class="secao" id="filmes">
+            <h2 class="titulo-secao">Filmes e Séries</h2>
+            <img class="imagem-secao" src="img/filmes1.svg" alt="Claquete de cinema">
+            <img class="imagem-secao" src="img/filmes2.svg" alt="Televisão com símbolo de reprodução">
+            <p class="texto-secao">
+                Filmes e séries reúnem histórias para assistir em casa, no cinema ou no celular.
+            </p>
+            <p class="legenda-imagem">Imagens ilustrativas</p>
+        </section>
+
+        <!-- Seção 2: Música e Podcasts -->
+        <section class="secao" id="musica">
+            <h2 class="titulo-secao">Música e Podcasts</h2>
+            <img class="imagem-secao" src="img/musica1.svg" alt="Fones de ouvido">
+            <img class="imagem-secao" src="img/musica2.svg" alt="Microfone de podcast">
+            <p class="texto-secao">
+                Música e podcasts acompanham o dia a dia, com conteúdos para ouvir em qualquer lugar.
+            </p>
+            <p class="legenda-imagem">Imagens ilustrativas</p>
+        </section>
+
+        <!-- Seção 3: Games e Tecnologia -->
+        <section class="secao" id="games">
+            <h2 class="titulo-secao">Games e Tecnologia</h2>
+            <img class="imagem-secao" src="img/games1.svg" alt="Controle de videogame">
+            <img class="imagem-secao" src="img/games2.svg" alt="Setup de computador">
+            <p class="texto-secao">
+                Games e tecnologia evoluem rápido, unindo diversão, criatividade e inovação.
+            </p>
+            <!-- Estilo inline: aplicado somente a este parágrafo -->
+            <p class="legenda-imagem" style="font-weight: bold;">Imagens ilustrativas</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Atividade da Agenda 13 — Desenvolvimento de Sistemas I</p>
+    </footer>
+</body>
+</html>

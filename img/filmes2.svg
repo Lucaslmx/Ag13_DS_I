@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" role="img" aria-label="Televisão com série">
+  <rect width="400" height="260" rx="12" fill="#2b2a2f"/>
+  <!-- Tela da TV -->
+  <rect x="70" y="40" width="260" height="160" rx="10" fill="#118ab2"/>
+  <!-- Pés da TV -->
+  <path d="M140 200 L120 230 M260 200 L280 230" stroke="#f5f5f5" stroke-width="6" stroke-linecap="round"/>
+  <!-- Ícone de play dentro da tela -->
+  <polygon points="180,85 180,155 235,120" fill="#f5f5f5"/>
+</svg>
